@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>aula 17 de html</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <style>
+            canvas{
+                border: 1px solid red;
+            }
+            summary::-webkit-details-marker{/*muda a cor do marcador do details */
+                color:#f00;
+            }
+        </style>
+        <script >
+            function desenha(){
+                let canvas = document.getElementById("canvas")
+                let ctx = canvas.getContext("2d")
+                ctx.fillRect(25,25,100,100);
+            }
+        </script>
+    </head>
+    <body>
+        
+        <pre><!--block. fluxo e fraseado e filhos fraseados. mostra tu de forma literal e nao muda a formatação do texto escrito -->
+            <code><!--inline, filhos elementos fraseados . mostra uma formatação diferente para trechos de códigos -->
+                function desenha(){
+                    let canvas = document.getElementById("canvas")
+                    let ctx = canvas.getContext("2d")
+                    ctx.fillRect(25,25,100,100);
+                }
+            </code>
+        <pre>
+        
+        <del>java</del><!--inline-block, filho fraseado riscando o filho, representa algo que foi deletado -->
+        <ins>html</ins><!--mesmo do de cima|mostra alfo que foi inserido-->
+        
+
+        <details open><!--block-->
+            <summary><!--muda o nome do saiba mais-->nome do summary</summary><!--usado sempre dentro do details-->
+        </details><!--um saiba mais onde expande e mostra os fillhos apos o summary-->
+        
+        <dfn title="Linguagem de marcação para web"></dfn><!--instancia de uma definição| inline-->
+
+        <canvas id="canvas" width="500px" height="500px">
+            seu browser nao tem suporte ao elemento canvas
+        </canvas><!--block, fluxo fraseado e encoporado, filhos trasparente-->
+
+        <script>desenha();</script>
+    </body>
+</html>
