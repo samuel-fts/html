@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Nova aula de html</title>
+        <!-- <link rel="stylesheet" type="text/css" href="estilo.css"> -->
+         <style>
+
+         </style>
+        <script>
+            function abrirDialiog(){
+                document.getElementById("d1").toggleAttribute("open");
+                renomear()
+                //toggleAtribute: acrescenta se nao existir ou tira se existir
+            }
+            function renomear(){
+                if(document.getElementById("d1").open){
+                    document.getElementById("btn_toggle").innerHTML="fechar"
+                }else{
+                    document.getElementById("btn_toggle").innerHTML="abrir"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <footer></footer><!--é um conteudo de section, como a div e article-->
+        <enbed><!-- usa para associar a um arquivo -->
+        <figure>
+            conteudo
+            <figcaption>
+                legenda
+            </figcaption>
+        </figure><!--block||serve para ter uma legenda dentro do seu conteudo usando o figcaption-->
+
+        <dl>
+            <dt><!--display block|| uma lista com valore e definicoes dentro-->
+                <dd></dd>
+            <dt>
+        <dl>
+
+        <em>enfase</em><!--inline|| destaca para enfase-->
+
+        <div>
+            <div>conteudo vizivel</div>
+        </div><!--como o article, ele é um container para os elementos||block| tudo fluxo-->
+        <diolog></dialog><!--passa a ter um novo corpo dentro dele-->
+
+        <button id="btn_toggle"onclick="abrirDialiog()">abrir</button>
+        <dialog id="d1">auqi dentro esta o dialogo</dialog><!--caixa de dialogo|| fluxo, filhos qualquer coisa-->
+        <!-- <script src="aula22.js"></script> -->
+    </body>
+</html>
