@@ -1,0 +1,17 @@
+body{
+    background-image:url();
+    background-repeat: no-repeat, repeat-x;
+    /*usado para o background nao se repitir e o outro e usado para repetir somente no eixo x*/
+    background-size: 400px;
+    background-attachment:scroll;/*usado para o background rolar junto com o scroll*/
+    border-image:url();
+    background-color: rgb(0,0,0,0.2)/*define a transparencia dentro do rgb*/
+}
+
+div{
+    background: repeating-linear-gradient(to right, red, blue);
+    background: radial-gradient( red 0%, blue 50%);
+    -webkit-text-fill-color: transparent;/*tonra o texto trasparente*/
+    background-clip: text;
+    -webkit-background-clip: text;/*corta o fundo exatmente no formato do texto*/
+}
